@@ -1,0 +1,28 @@
+{
+  "status": "EVALUATED",
+  "result": {
+    "interest_score": 1.5,
+    "clarity_score": 2.0,
+    "virality_score": 1.0,
+    "standalone_score": 1.0,
+    "hook_score": 1.0,
+    "ending_score": 1.0,
+    "information_value_score": 1.0,
+    "context_dependency_score": 9.0,
+    "completeness_score": 2.0,
+    "content_type": "REACTION",
+    "detected_topic": "unknown",
+    "emotional_tone": "EXCITED",
+    "requires_context": true,
+    "moment_summary": "El hablante emite una serie de exclamaciones y frases fragmentadas, aparentemente reaccionando de forma enérgica o caótica a algo en el stream, utilizando términos que parecen ser jerga o nombres propios poco claros.",
+    "evaluation_reason": "El clip carece de coherencia semántica y claridad. Es una sucesión de frases inconexas y posiblemente términos de nicho o malinterpretaciones del audio, lo que lo hace imposible de entender sin un contexto visual o de conversación mucho más profundo. No aporta valor informativo ni es un momento destacado por su contenido.",
+    "overall_score": 1.3,
+    "quality_level": "LOW",
+    "recommended_action": "DISCARD"
+  },
+  "error": "",
+  "latency_seconds": 113.53,
+  "model": "gemma4:26b",
+  "preview": "UNAVAILABLE",
+  "clip_status": null
+}

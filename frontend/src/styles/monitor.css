@@ -1,0 +1,234 @@
+.statusbar {
+  position: fixed;
+  bottom: 0;
+  left: 226px;
+  right: 0;
+  height: 33px;
+  padding: 0 23px;
+  display: flex;
+  align-items: center;
+  gap: 21px;
+  background: #101012;
+  border-top: 1px solid #27272b;
+  font-size: 8px;
+  color: #6c6975;
+  z-index: 25;
+  transition: left 0.2s;
+}
+.statusbar > span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+}
+.statusbar b {
+  font-size: 8px;
+  color: #b0aabb;
+  font-weight: 450;
+  font-variant-numeric: tabular-nums;
+}
+.status-spacer {
+  flex: 1;
+}
+.local-indicator {
+  border-left: 1px solid #302b34;
+  padding-left: 17px;
+  letter-spacing: 1px;
+}
+.monitor-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.8fr) minmax(270px, 1fr);
+  gap: 18px;
+}
+.monitor-empty {
+  aspect-ratio: 16/9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background: #0b0b0e;
+  color: #7f6b9b;
+}
+.monitor-empty > svg,
+.monitor-empty > h3,
+.monitor-empty > p,
+.monitor-empty > span {
+  position: relative;
+}
+.monitor-gridlines {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(#24202b55 1px, transparent 1px),
+    linear-gradient(90deg, #24202b55 1px, transparent 1px);
+  background-size: 45px 45px;
+  mask-image: radial-gradient(ellipse, #0008, transparent 70%);
+}
+.monitor-empty h3 {
+  font-size: 13px;
+  font-weight: 450;
+  color: #aaa0b9;
+  margin: 18px 0 9px;
+}
+.monitor-empty p {
+  font-size: 10px;
+  color: #6f657e;
+}
+.monitor-empty > span {
+  font-size: 7px;
+  letter-spacing: 2px;
+  margin-top: 28px;
+  color: #51455f;
+}
+.video-wrap {
+  position: relative;
+  background: #050506;
+  aspect-ratio: 16/9;
+}
+.video-wrap video {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.video-wrap > .badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: #201013db;
+  padding: 6px 8px;
+  border-radius: 4px;
+}
+.video-error {
+  position: absolute;
+  bottom: 50px;
+  left: 20px;
+  font-size: 11px;
+  color: #f4bf75;
+  background: #111d;
+  padding: 10px;
+}
+.monitor-transport {
+  padding: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #29252f;
+  gap: 10px;
+}
+.monitor-transport > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.monitor-transport strong {
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 450;
+  font-variant-numeric: tabular-nums;
+}
+.monitor-transport small {
+  font-size: 9px;
+}
+.stop-button {
+  border-color: #59323a;
+  background: #26191d;
+  color: #e28890;
+  padding: 11px;
+}
+.buffer-track {
+  padding: 0 18px 18px;
+}
+.buffer-track > div {
+  display: flex;
+  justify-content: space-between;
+  font-size: 7px;
+  color: #92859f;
+  letter-spacing: 1px;
+}
+.buffer-track progress {
+  width: 100%;
+  height: 3px;
+  appearance: none;
+  border: none;
+  display: block;
+  margin: 10px 0;
+  background: #29222f;
+  border-radius: 3px;
+}
+.buffer-track progress::-webkit-progress-bar {
+  background: #29222f;
+}
+.buffer-track progress::-webkit-progress-value {
+  background: #9164d6;
+}
+.buffer-track p {
+  font-size: 8px;
+  color: #65586f;
+}
+.transcript {
+  display: flex;
+  flex-direction: column;
+  max-height: 640px;
+  min-height: 430px;
+}
+.transcript-scroll {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0 18px;
+  scrollbar-width: thin;
+  scrollbar-color: #3e324d transparent;
+}
+.transcript article {
+  padding: 17px 0;
+  border-bottom: 1px solid #26212d;
+}
+.transcript article time {
+  font-size: 9px;
+  color: #736380;
+  font-variant-numeric: tabular-nums;
+}
+.transcript article p {
+  font-size: 12px;
+  line-height: 1.8;
+  margin-top: 7px;
+  color: #bfb6ca;
+}
+.transcript article.latest p {
+  color: #e4dced;
+}
+.transcript footer {
+  font-size: 8px;
+  color: #786985;
+  padding: 15px;
+  border-top: 1px solid #28212f;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.transcript .empty {
+  padding: 75px 5px;
+}
+.current-stream {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.current-stream h2 {
+  font-size: 20px;
+  margin: 12px 0;
+}
+.current-stream p {
+  color: #95859c;
+  font-size: 11px;
+}
+.stream-selector { display: flex; flex-wrap: wrap; gap: 12px; margin: 16px 0; }
+.stream-selector button { flex: 1 1 260px; white-space: normal; text-align: left; }
+.recording-status { min-height: 180px; aspect-ratio: auto; }
+.clip-timing { padding: 20px; margin: 12px 0; }
+.clip-timing p, .clip-timing small { display: block; margin: 12px 0; line-height: 1.5; color: #b6a9c0; font-size: 12px; }
+.clip-timing-fields { display: flex; flex-wrap: wrap; gap: 16px; }
+.clip-timing-fields label { display: grid; gap: 8px; flex: 1 1 180px; font-size: 12px; }
+.clip-timing-fields input { width: 100%; padding: 10px; color: #eee; background: #151219; border: 1px solid #493957; border-radius: 6px; }
+.buffer-track summary { cursor: pointer; margin-top: 12px; }

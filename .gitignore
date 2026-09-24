@@ -1,0 +1,26 @@
+# Python
+backend/.venv/
+backend/__pycache__/
+backend/.pytest_cache/
+backend/storage/*.db
+backend/storage/buffer/*
+backend/storage/clips/*
+
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# Environment and editor files
+.env
+.vscode/
+**/__pycache__/
+**/*.pyc
+backend/storage/
+frontend/*.tsbuildinfo
+
+# Local caches, credentials and scratch notes
+**/.pytest_cache/
+.env.*
+!.env.example
+*.log
+Nuevo documento de texto.txt

@@ -1,0 +1,205 @@
+.collapsed .sidebar {
+  width: 74px;
+  padding-left: 9px;
+  padding-right: 9px;
+}
+.collapsed .brand {
+  padding: 0 9px;
+}
+.collapsed .brand > span:last-child,
+.collapsed .workspace,
+.collapsed .nav-label,
+.collapsed .nav-item > span,
+.collapsed .nav-item > small,
+.collapsed .local-card {
+  display: none;
+}
+.collapsed nav {
+  margin-top: 42px;
+}
+.collapsed .nav-item {
+  justify-content: center;
+  padding: 12px;
+}
+.collapsed .main-shell {
+  margin-left: 74px;
+}
+.collapsed .statusbar {
+  left: 74px;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes shimmer {
+  to {
+    background-position: -200% 0;
+  }
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (min-width: 1550px) {
+  main {
+    padding: 42px 45px;
+  }
+  .source-panel {
+    padding: 36px;
+  }
+  .source-copy h2 {
+    font-size: 27px;
+  }
+  .empty {
+    padding: 66px 30px;
+  }
+  .metric {
+    padding: 22px;
+  }
+  .metric strong {
+    font-size: 32px;
+  }
+}
+@media (max-width: 1150px) {
+  .system-lights > span:not(:last-child) {
+    display: none;
+  }
+  .dashboard-lower {
+    grid-template-columns: 1.5fr 1fr;
+  }
+  .source-foot > span:last-child {
+    display: none;
+  }
+  .metrics {
+    gap: 9px;
+  }
+  .metric {
+    padding: 15px 12px;
+  }
+  .metric small {
+    font-size: 8px;
+  }
+  .monitor-grid {
+    grid-template-columns: 1fr;
+  }
+  .transcript {
+    max-height: 350px;
+    min-height: 300px;
+  }
+  .monitor-transport small {
+    display: none;
+  }
+}
+@media (max-width: 900px) {
+  .sidebar {
+    width: 74px;
+    padding-left: 9px;
+    padding-right: 9px;
+  }
+  .brand {
+    padding: 0 9px;
+  }
+  .brand > span:last-child,
+  .workspace,
+  .nav-label,
+  .nav-item > span,
+  .nav-item > small,
+  .local-card {
+    display: none;
+  }
+  nav {
+    margin-top: 42px;
+  }
+  .nav-item {
+    justify-content: center;
+    padding: 12px;
+  }
+  .main-shell {
+    margin-left: 74px;
+  }
+  .statusbar {
+    left: 74px;
+  }
+  .dashboard-lower {
+    grid-template-columns: 1fr;
+  }
+  .metrics {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  main {
+    padding: 25px 20px;
+  }
+  .settings-grid {
+    grid-template-columns: 1fr;
+  }
+  .clip-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .statusbar {
+    gap: 12px;
+  }
+  .statusbar > span:nth-child(3) {
+    display: none;
+  }
+}
+@media (max-width: 620px) {
+  .source-form,
+  .source-result {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .source-panel {
+    padding: 23px 17px;
+  }
+  .page-heading {
+    align-items: flex-start;
+  }
+  .page-heading > .secondary {
+    display: none;
+  }
+  h1 {
+    font-size: 23px;
+  }
+  .topbar {
+    padding: 0 20px;
+  }
+  .system-lights {
+    display: none;
+  }
+  .statusbar > span:nth-child(2),
+  .statusbar > span:nth-child(6) {
+    display: none;
+  }
+  .source-copy h2 {
+    font-size: 19px;
+  }
+  .source-foot {
+    gap: 9px;
+  }
+  .clip-grid {
+    grid-template-columns: 1fr;
+  }
+  .panel > .clip-grid {
+    grid-template-columns: 1fr;
+  }
+  .monitor-transport {
+    flex-wrap: wrap;
+  }
+  .current-stream {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}

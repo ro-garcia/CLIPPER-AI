@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "active_profile_id": null,
+  "groups": [
+    {"id": "conversation", "name": "Conversación · ejemplo", "enabled": true}
+  ],
+  "rules": [
+    {
+      "id": "question",
+      "name": "Pregunta abierta · ejemplo",
+      "pattern": "por qué",
+      "rule_type": "QUESTION_PATTERN",
+      "category": "Preguntas",
+      "weight": 0.12,
+      "language": "es",
+      "match_type": "CONTAINS",
+      "case_sensitive": false,
+      "enabled": true,
+      "group_id": "conversation"
+    },
+    {
+      "id": "conclusion",
+      "name": "Conclusión · ejemplo",
+      "pattern": "en conclusión",
+      "rule_type": "CONCLUSION",
+      "category": "Cierre",
+      "weight": 0.10,
+      "language": "es",
+      "match_type": "CONTAINS",
+      "case_sensitive": false,
+      "enabled": true,
+      "group_id": "conversation"
+    }
+  ],
+  "profiles": [
+    {"id": "podcast", "name": "Podcast · ejemplo", "group_ids": ["conversation"], "rule_ids": []}
+  ]
+}
